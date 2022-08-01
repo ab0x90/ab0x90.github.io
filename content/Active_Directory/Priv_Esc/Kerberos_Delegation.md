@@ -1,7 +1,6 @@
-Kerberos Delegation allows the reuse of end-user credentials to access resources hosted on a different server
-This is typically useful in multi-tier serice or applicaitons where Kerberos double-hop is required
+Kerberos Delegation allows the reuse of end-user credentials to access resources hosted on a different server. This is typically useful in tiered environments where a kerberos double hop is necessary.
 
-Example: a web server and a seperate database server, users authenticate to ta web server and the web server makes requests to a database server. The web server can request access to resources (all or some resources depending on the type of delegation) on the database server as the user and not as the web server's service account
+Example: a web server and a seperate database server, users authenticate to the web server and the web server makes requests to a database server. The web server can request access to resources (all or some resources depending on the type of delegation) on the database server as the user and not as the web server's service account
 
 The service account for web service must be trusted for delegation to be able to make requests as a user
 
@@ -21,13 +20,13 @@ Steps for Delegation
 
 There are two basic types of kerberos delegation. In both types of delegations a mechanism is required to impersonate the incoming user and authenticate to the second hop server as the user.
 
-- General/Basic or Unconstrained Delegation which allows the first hop server to request access to any service on any computer on the domain
-- Constrained Delegation which allows the first hop server to request access only to specified services on specified computers. If the user is not user Kerberos Authentication to authenticat to the first hop server, Windows offers Protocol transition to transition the request to Kerberos
+- Unconstrained Delegation which allows the first hop server to request access to any service on any computer on the domain
+- Constrained Delegation which allows the first hop server to request access only to specified services on specified computers. If the user is not using Kerberos Authentication to authenticate to the first hop server, Windows offers Protocol transition to transition the request to Kerberos
 
 
 ## Unconstrained Delegation
 
-When set for a paticular service account, unconstrained delegation allows delegation to any service to any resource on the domain as a user. When unconstrained delegation is enabled, the DC places the user's TGT inside the TGS. When presented to the server with unconstrained delegation the TGT is extracted from TGS and stored in LSASS. This way the server can reuse the user's TGT to access any othe resource as the user. This could be used to escalate privileges in the case we can compromise the computer with unconstrained delegation and a domain admin connects to that machine.
+When set for a paticular service account, unconstrained delegation allows delegation to any service to any resource on the domain as a user. When unconstrained delegation is enabled, the DC places the user's TGT inside the TGS. When presented to the server with unconstrained delegation the TGT is extracted from TGS and stored in LSASS. This way the server can reuse the user's TGT to access any othe resource as the user. This could be used to escalate privileges in the the computer with unconstrained delegation is compromised. 
 
 Check for unconstrained delegation
 
