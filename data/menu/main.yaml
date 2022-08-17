@@ -5,13 +5,15 @@ main:
     ref: "/Active_Directory/Active_Directory"
     sub:
       - name:  Download and Execute Methods
-        icon: "gdoc_keyboard_arrow_right"
         ref: "/Active_Directory/Download_and_Execute"
       - name:  Reverse Shells
-        icon: "gdoc_keyboard_arrow_right"
         ref: "/Active_Directory/Reverse_Shells"
+      - name:  Inital Attacks
+        ref: "/Active_Directory/Initial_Attack_Vectors/Initial_Attacks"
+        sub:
+          - name: LLMNR Poisoning
+            ref: "/Active_Directory/Initial_Attack_Vectors/LLMNR"
       - name:  AD Enumeration
-        icon: "gdoc_keyboard_arrow_right"
         ref: "/Active_Directory/Active_Directory_Enumeration"
         sub:
           - name: CrackMapExec
@@ -21,18 +23,17 @@ main:
           - name: SMB
             ref: "/Active_Directory/SMB"
       - name:  Service Exploitation
-        icon: "gdoc_keyboard_arrow_right"
         ref: "/Active_Directory/Service_Exploitation/Service_Exploitation"
         sub:
           - name: RDP
             ref: "/Active_Directory/Service_Exploitation/RDP"
           - name: SMB
             ref: "/Active_Directory/Service_Exploitation/SMB"
+          - name: WinRM
+            ref: "/Active_Directory/Service_Exploitation/WinRM"
       - name:  Lateral Movement
-        icon: "gdoc_keyboard_arrow_right"
         ref: "/Active_Directory/Lateral_Movement"
       - name:  Domain Persistence
-        icon: "gdoc_keyboard_arrow_right"
         ref: "/Active_Directory/Persistence/Domain_Persistence"
         sub:
           - name: Golden Ticket
@@ -46,10 +47,8 @@ main:
           - name: ACLs
             ref: "/Active_Directory/Persistence/acls"     
       - name:  Bypasses
-        icon: "gdoc_keyboard_arrow_right"
         ref: "/Active_Directory/bypasses"  
       - name:  Privilege Escalation
-        icon: "gdoc_keyboard_arrow_right"
         ref: "/Active_Directory/Priv_Esc/Privilege_Escalation"     
         sub:
           - name: PowerUp
@@ -67,7 +66,6 @@ main:
           - name: MSSQL Servers
             ref: "/Active_Directory/Priv_Esc/MSSQL_Servers" 
   - name: Enumeration
-    icon: "gdoc_tag"
     ref: "/Enumeration/Enumeration"
     sub:
       - name: By Port
