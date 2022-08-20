@@ -13,6 +13,8 @@ main:
         sub:
           - name: LLMNR Poisoning
             ref: "/Active_Directory/Initial_Attack_Vectors/LLMNR"
+          - name: Relay Attacks
+            ref: "/Active_Directory/Initial_Attack_Vectors/Relay_Attacks"
       - name:  AD Enumeration
         ref: "/Active_Directory/Active_Directory_Enumeration"
         sub:
@@ -51,6 +53,8 @@ main:
       - name:  Privilege Escalation
         ref: "/Active_Directory/Priv_Esc/Privilege_Escalation"     
         sub:
+          - name: Rights Abuse
+            ref: "/Active_Directory/Priv_Esc/Rights_Abuse" 
           - name: PowerUp
             ref: "/Active_Directory/Priv_Esc/PowerUp" 
           - name: Invoke-Mimikatz
