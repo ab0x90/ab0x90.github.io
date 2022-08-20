@@ -80,8 +80,8 @@ C:\Windows\system32>whoami
 nt authority\system
 
 C:\Windows\system32>
-
-
 ```
+
+This is referred to as Resource-Based Constrained Delegation. Further information on this method: http://blog.redxorblue.com/2019/12/no-shells-required-using-impacket-to.html
 
 
