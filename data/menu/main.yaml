@@ -50,9 +50,21 @@ main:
             ref: "/Active_Directory/Persistence/acls"     
       - name:  Bypasses
         ref: "/Active_Directory/bypasses"  
+        sub:
+          - name: Rights Abuse
+            ref: "/Active_Directory/Bypassing_Defender_With_Scarecrow"
       - name:  Privilege Escalation
         ref: "/Active_Directory/Priv_Esc/Privilege_Escalation"     
         sub:
+          - name: ADCS
+            ref: "/Active_Directory/Priv_Esc/Active_Directory_Certificate_Services" 
+            sub:
+              - name: Certificate Theft
+                ref: "/Active_Directory/Priv_Esc/Certificate_Theft"
+              - name: Certificate Persistence
+                ref: "/Active_Directory/Priv_Esc/Certificate_Persistence"
+              - name: Privilege Escalation via Certificates
+                ref: "/Active_Directory/Priv_Esc/Certificate_Privilege_Escalation"                
           - name: Rights Abuse
             ref: "/Active_Directory/Priv_Esc/Rights_Abuse" 
           - name: PowerUp

